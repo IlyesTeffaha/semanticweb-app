@@ -1,0 +1,30 @@
+.dashboard{
+background-color: rgb(97, 162, 223);
+color: white;
+    display: flex;
+    align-items:center;
+flex-direction: column;
+    justify-content: space-evenly;
+    height: 150vh;
+    
+
+}
+
+.selectbar{
+    /* position: absolute; */
+}
+
+.fontcolor{
+  color: white;
+text-shadow: black;
+}
+
+Table{
+    background-color: rgb(156, 156, 195);
+}
+
+.color{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(83, 86, 168);
+}

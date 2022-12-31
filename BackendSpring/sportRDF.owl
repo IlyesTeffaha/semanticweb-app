@@ -1,0 +1,840 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#"
+     xml:base="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#admet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#admet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Score"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#commente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#commente">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Commentateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#diffuse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#diffuse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#encourage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#encourage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#gagner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#gagner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#perdre"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#gére -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#gére">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Entraineur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#hasPname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#hasPname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#pname"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joindre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joindre">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joueAvec -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joueAvec">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#juge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#juge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Arbitre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#maintient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#maintient">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personnel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#participeDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#participeDans">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#perdre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#perdre">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarde -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarde">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarderDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarderDans">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarderPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarderPar">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#dateDebut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#dateDebut">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#dateFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#dateFin">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#nationalite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#nationalite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#pname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#pname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Accueillant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Accueillant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Arbitre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Arbitre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joueAvec"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Commentateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Commentateur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#commente"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#DehorsStade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#DehorsStade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#EnStade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#EnStade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Entraineur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Entraineur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#gére"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#joindre"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Internationale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Internationale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Athlete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Journaliste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Journaliste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Media">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Nationale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Nationale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Competition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarderPar"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Salle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Salle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Score">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Site_Web -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Site_Web">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Spectateur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#encourage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#regarde"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Stade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Stade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Television -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Television">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#UnSeulJoueur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#UnSeulJoueur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Equipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Visiteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Visiteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Amir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Amir"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Championsleague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Championsleague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Internationale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Chaweli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Chaweli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Commentateur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Chelsea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Chelsea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Visiteur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Cristiano_Ronaldo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Cristiano_Ronaldo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Dave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#EnStade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Federer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Federer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#HamzaBalloumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#HamzaBalloumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Journaliste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#IlyesTeffha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#IlyesTeffha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Jhon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Jhon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#DehorsStade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Klopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Klopp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Entraineur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#ManU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#ManU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Accueillant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Manu_Chelsea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Manu_Chelsea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Nadal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Nadal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeTennis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Newcommentateur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Newcommentateur">
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Partie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Selmi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Selmi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Arbitre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#SlayerPlayer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#SlayerPlayer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#UnSeulJoueur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Youssef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Youssef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Arbitre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#allianz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#allianz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Stade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#amazon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Site_Web"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#amir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#amir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Personnel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#hiwar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#hiwar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Television"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#messi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#messi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#newJournaliste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#newJournaliste"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#newtrainer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#newtrainer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#neymar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#neymar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#JoueurDeFootball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#nul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#nul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Score"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#partie1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#partie1">
+        <hasPname rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#partie1"/>
+        <pname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">match</pname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#premierLeague -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#premierLeague">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Nationale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#singleplayer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#singleplayer1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#site1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#site1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#team1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#team1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#team2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#team2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#MultiJoueur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#wataniya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#wataniya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Television"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#worldcup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#worldcup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Internationale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#zwawi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#zwawi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amirm/ontologies/2022/9/SportApp#Salle"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
